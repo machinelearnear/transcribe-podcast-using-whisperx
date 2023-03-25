@@ -1,0 +1,352 @@
+Hello again to the channel, today we are going to make a very simple video, and the question is, do you want to try GPT-4 from OpenAI and other language models without spending a dime?
+Well, here we have the solution. Today we are going to see Open Playground,
+which is a collaborative platform that allows us to experiment with models
+of business language such as Meta, Anthropic, Google, Himephase and OpenAI.
+so let's see a little how this tool works, as always we are going to see the video divided
+into parts but there are only two parts, one is Prompt Engineering and what does this mean and the
+other is what we are seeing here so we are going to start directly with this tool, what
+we have here we have this website that I have all the links will be in the description of the video
+this is a tool that what it does is that we can put a prompt here, that is, that we have an input that we are playing with the models and then we can compare the result of this input when we send it to all these models that we are seeing here and indeed all those that we have here on the right, so in this case I asked him a question where I say look at this article and I write text and put a web page, right?
+Bye.
+Then I say, look at this web page, which is a journal article by The Economist
+that says, the career of the artificial intelligence laboratories is heating up,
+Chad GPT is not the only one in town, this came out at the end of January of 2023.
+And what I say is, look at the text that is on that web page and give me a summary.
+No?
+And I also tell you to fool around, I tell you, man, put me a strong silver accent to everything you say, right?
+So we send this submit this prompt and what does it give us back?
+Well, let's see all the models, right?
+And here I'm going to make a stop and we're going to say which are the big companies that are doing things.
+We have big companies, like Google OpenAI, for example.
+And then we have Startups, and then we have a whole part that would be open source.
+So we have what would be Anthropic Cohere, for example,
+and these would be the smallest laboratories.
+We have OpenAI, Google, and Google does a lot of open source things.
+and then we have meta.
+Facebook, which also does open source things.
+So in this case, we have a model here, which is Dantropic,
+and you can see that here I had asked him,
+I mean, I make a summary and put a silver accent and you can see that here
+he sent me a che, but the rest he writes everything to me in English.
+I mean, very well understood, but at least it seems that
+he is making a summary of the article. Let's see Lama,
+Let's see what happens.
+we can see here that it is actually inventing absolutely everything.
+It didn't submit an article, I didn't do it,
+and the only thing it is doing is inventing all these things.
+This Google Flan model is not looking at the text either,
+which makes sense because it is not instructed to do that,
+and decoding directly does absolutely anything.
+But if we look at OpenAI, GPT-4 and GPT-3,
+look at GPT-3.5,
+I'm sorry, GPT-3.5 is ChatGPT.
+Sorry, but I can't write with an Argentinian accent because I'm a language modeler and I don't have an Argentinian accent.
+However, I can provide a summary of the article you mentioned, right?
+And here it starts to tell us a little about the summary.
+But, if we see GPT-4, we will see that it starts us there very well.
+And that's why I left this example, because it starts us saying,
+Hey, friend, look, I'll tell you that this article talks about how the competition
+between the artificial intelligence laboratory is heating up all over the world.
+artificial intelligence all over the world, they are investing a lot of money.
+in research and development, and big companies like Google, Apple and Facebook
+are fighting to hire the best brains.
+You see? Now there are concerns about the concentration of talent
+and the possibility of an oligopoly in the industry, but well,
+That's what happens when things get spicy in the world of technology.
+Impressive! How is it going to write like this? Very good!
+But well, this is just an example of the things we can do.
+What you are seeing here is something completely free.
+It is a platform called Playground, Open Playground.
+It is open source, it actually has a 3.0 GPL license.
+But it is a web application that allows us to compare and run
+language models in our data.
+Now, this means that we can download it, we run it on our machine, we install it here and we start it and that already leaves us to use it on our computer, but this that we see here is not on our computer, where is this?
+Well, this, nat.dev, is the web page of Nat Friedman, who is the ex-CEO of Twitter.
+We can see it here.
+was the one that managed twitter before elon musk appeared and if you can see here this
+guy put it completely free, that is, he put this tool and said well, don't worry, I'm going to
+put all those models that we had seen before, I'll put it for free, don't worry, I'll
+for the account, everything is fine.
+And you can see here, because the guy says, what's going on, man?
+Look how the OpenAI account went, exponential.
+Why? Because people are using it, right?
+Just like we are here accessing GPT-4 or 3.5,
+a lot of people are doing it, so this for now is free,
+that's why I put it, that's why I tell it, take advantage of it.
+And well, now that we have seen this tool,
+we already know where it comes from, let's see a little, let's try it,
+to see how well it works.
+And here is a page...
+that I also put in the description. It is a page that is making us a guide to Prompt
+Engineering. What does Prompt Engineering mean? Well, this is what we are doing here, we are
+talking to the model and the way we talk to the model is very important because that depends
+how the module was trained.
+and you will see the difference now, there are models that will respond much better, right?
+these prompts that we are putting in, so first of all we are going to see a little bit what
+are the characteristics that the language models have and if we go back you will see here
+that there are a couple of things, that is, we have all the models here on the right, the oiter.ai which is
+open source, pitea, anthropic that I have to pay for, alexalpha is a German, European company and here
+we have the models that also if we click it, that is, we are going to have it available, we have
+We have High End Face, we have Lama, which is meta.
+We have Cogier, which is a startup, this is Pavo, OpenAI, and then we have several models.
+But these are the models that are being compared.
+So, see above all that we have values ​​such as temperature, topK, topKp, etc.
+All these things.
+a penalty for repetition and so on.
+So, what do we have here? We have two values that are the most important.
+We have the temperature and the top p.
+What do these two things mean?
+If we lower the temperature of the model, it means that we are going to make it more deterministic.
+That means that it will always bring us the most likely token to come out, right?
+So if we say the mouse ate the cheese, cheese will be the most likely token.
+But if we want to write a document or a text that is creative,
+not necessarily.
+we always want it to bring us the most probable, because if it is not simply repeating things that I have already read,
+we want it to generate something completely new, so for that we increase the temperature.
+These values ​​here can see that it is not, that is, it is unmarked and this is because if we click up here,
+Bye!
+to see that each model has different temperature values
+you can see that the values of Anthropic and Cloth have very high values
+this is telling us that they are more creative
+and these values, for example, GPT 4 and 3.5 have values in the middle
+that means that they are a little more factual, more deterministic.
+Going back, Top P is the same, right? Which of all the possibilities that open up within this prediction
+because, let's say, you can say a mouse eats cheese, pizza, choripan, and so on
+Choripan is possible. Grammatically, it is possible that the mouse eats a chori, but it is less likely.
+So we're going to have a list, cheese, pizza, chorizo, in that order.
+So if we say, bring me the first result of the top P,
+it's always going to return cheese, right?
+So if we have these two things to change,
+the ideal is that we don't change them at the same time, right?
+Not both, only one of the two.
+Well...
+We saw these characteristics, let's see a little bit what the prompts are, right?
+One is the generative, the sky is, and this will complete us, right?
+Let's try how it works, let's get this out, and here we have 8 models,
+Let's try what happens when we put this.
+The sky is... is what?
+Well, impressive, right? We already started with Antropic, which tells us,
+I apologize, but I don't have the ability to see the sky or determine its current state.
+I am an artificial intelligence assistant created by Antropic, blah blah blah.
+Impressive. Well, Bloom, from Hugging Face, tells us the sky is blue.
+Flan, from Google, tells us blue.
+And here, OpenAI, well, I think it's impressive, right?
+It's giving us an interesting answer.
+GPT 4 versus GPT 3.5, not just GPT.
+the sky is blue during the day dark during the night but gpt-4 tells us the sky is the
+atmosphere of the earth as an impressive view the answer of gpt-4 this is something that I was
+reading also that they say that gpt-4 is more factual more deterministic that it has less emotions
+let's say that we are going to see a little the difference in that we saw a basic prompt we see the
+elements that is what we were talking about before we do not have an instruction we have a context a
+an input data that we are going to do and an indicator.
+that the output is going to give us. These are the types, well here you have, I'm going to leave it to you,
+that is, you can see it, generally how it works is something like that, we want to
+make an instruction and say, for example, it's like talking to a person, I translated the text
+you see below into Spanish, then text, two points and we put the phrase in English, then
+we give it the instruction and we give it the input, hello, and the output is directly hello,
+The translation in Spanish.
+As examples of these prompts, we have these, which are the most basic ones.
+We make a text summary, get information from somewhere,
+ask questions and answers,
+I ask a question to a text and get an answer,
+classify my text in a conversation,
+generate a code and reason.
+This can be, if Marta bought three apples but gave two apples to Juan,
+how many apples, well, this kind of things.
+Let's see what are the techniques that exist, here we are going to see the examples, we are going to see one that is
+zero shot prompting, this means that we are asking the model directly to do
+something, to do a task, a goal, we tell it in this case without doing any kind of pre-training
+or anything, we simply tell it to classify the text in neutral, negative or positive and the text is
+I think the vacation was good, right? And the sentiment was good.
+Anthropic is telling us that it is neutral.
+HindFace is telling us that it is positive.
+Lan is telling us that it is neutral.
+OpenAI is telling us, in its two variants, that it is neutral.
+But look at how...
+Well, here, cohere, xlarge...
+Let's see, it's returning us a code.
+Anything is returning us a code.
+Cohere, what's up, man?
+Well, Anthropic gives us a good answer here.
+It would classify the text as neutral.
+The word OK suggests a neutral feeling.
+Let's see another example. This is zero shot, that means we are directly telling it what we want.
+We want it to classify the text.
+Few shot is when we give it an example.
+At the same time we ask it for something, we give it an example of what we ask for.
+This is a weird example, but it says...
+It is a small, hairy animal, native to Tanzania.
+An example in a sentence that uses the word wadpoo is
+We were traveling to Africa and we saw some wadpoos, the truth is that they are quite cute.
+To do a fardoodle means to jump up and down very fast.
+An example.
+And this is going to be quite random. It's a creative example.
+So let's see what it does to us when we put this.
+We give it an example.
+Let's say we invent a word and we give it an example of how to use that word in a sentence.
+And then we invent another word or talk about another word and we ask it to generate an example of that word in another sentence.
+Well, let's start with Antropic. Antropic is directly telling us, look, I don't know these two words, so eat it, basically.
+HeimFace generates a sentence, right? We saw a Wadpoo and he was doing a Fardoodle.
+Flan too. The frog did a fartoodle in the pond.
+And this one also seems pretty good, right?
+Kogira, now, really, is good.
+And she's also explaining the meaning.
+meaning, that is, it is something half silly, half funny
+act in a silly way, an example of a sentence that uses the word naffy, well here
+absolutely anything is being invented, so coherent, you were fine and then bad.
+OpenAI, well, chat-gpt generates two sentences for us and they are interesting, I could not contain my
+my surprise and I started Fardoodle when I heard the news well ok
+we are going to see this one called
+chain of thought
+and in this case, if we take the first example
+For example...
+Create. Share. Learn.
+And it's a very interesting concept of chain of thought.
+And we ask the model, for example,
+this would be like a few shot, right? Think of it like a few shot.
+We give it an example.
+Rogelio had five tennis balls.
+He bought two more tennis balls cans.
+Each of those cans had three tennis balls.
+How many cans does he have in total?
+The answer is eleven.
+This is the information we give him.
+We simply tell him it's eleven.
+But we don't tell him how he has to think about the problem.
+and
+So when we give the next example, we tell it that the cafeteria had 23 apples,
+they used 20 to make lunch, and they bought 6 more.
+How many apples do they have?
+And here the model says that the answer is 27.
+Of course, see you later.
+On the other hand, when we use this chain of thought and we give it the first example,
+notice that we are saying that Rogelio started with 5 balls, then he bought 2 cans with 3 each,
+so we have 5 plus 6, 11, the answer is 11.
+And since we gave him this, when we ask him this question again, the second time,
+The model will respond in the same way that we responded here, in the example.
+so now it starts to think and as it is thinking, let's say it is putting it in this sequence, it
+can answer correctly, so the answer is 9, which is the correct number,
+so let's see here how this works, so we copy this prompt, we put it here and we
+submit and we are going to see which model is the one that works best, so the question here is
+The question here is, what is the answer?
+This.
+The number has to be 41, and the answer is false.
+So here we can see, well, here it says all the numbers.
+It gives us 25, and the answer is false.
+Wrong.
+Here it gives us 36, and the answer is true.
+Wrong.
+Wrong.
+Google.
+It gives us 97, and the answer is wrong.
+Let's see GPT-4 and ChatGPT.
+Putting all this together gives us 41. The answer is false.
+Both produce the same result.
+The answer is correct.
+We see Cogier again doing whatever.
+We see Lama again doing whatever.
+Hindface with Bloom, whatever.
+But at least the result is better.
+But these two, whatever.
+Let's continue here.
+This is what would be the
+own consistency, right? So here we want it to self-reference when we do the prompt
+When I was 6 years old, my sister was half my age, that is, I was 3 years old. Now that I am 70, what age does my sister have?
+No?
+Let's see.
+Here he answered wrong, it says 35.
+I mean, he did half of 70.
+This is already correct.
+There you go
+Sorry, proper consistency would be this way of writing the language we have.
+This way is when we do an arithmetic reasoning.
+But well, let's see if we do this, who answers us, right?
+Well, notice how Antropic is already taking this input and is breaking it step by step, right?
+And here it is telling us, when you were 6 years old, your sister was half your age.
+So she lived two or three years. So your sister is three years older?
+when you were 6 years old. Now, you are 70 years old
+3 years old when you were 6 years old
+now you are...
+If you are 70 years old, your sister would be 72, 35, 35, blah blah blah
+I mean, anyone, anyone. You started well and ended up doing anything.
+Let's see the other module, Cloth 1.2
+I had 6 years, so I had 3, now I have 70, 70 minus 6 is 64, 30 plus 64 is 67, well here I do not know what magic he did here to think about this but the answer is correct 67 years, so we can say that it is correct, we are going to see Lama of meta
+My mother has three daughters, January, February and March, February, February, well, anything, plum says 40 is wrong, flan 30 is wrong, cohere, let's see, let's see, cohere, well again 35, incorrect, let's see chat gpt and gpt 4, well chat gpt, wrong, your sister is 64 years old, wrong, incorrect
+GPT-4, when you were six years old your sister was half your age, which means that she is three
+years younger than you, now that you are 70, your sister is 70 minus 3, 67 years old. GPT-4, the best
+answer at this time. Let's see what happens when we put this in self consistency,
+Let's see if we can get the other models to have a better response.
+Well, let's see, it's going to have to do some thinking. 67, 69, 35. Let's see what it gives us back.
+No? And here you have to see if...
+if we are not cutting the answer, because here we have 200 tokens
+so I don't know if we are cutting the answer
+here you can see how chatgpt and gpt4 have the same answer, 67
+cohere is putting money, a dress costs 12, etc.
+well, anything, cohere
+let's see these people
+Is this free or do I have to pay for it?
+Well, you have to pay. How much? Two and a half each thousand, that means that it comes out 0.0025
+And how much does ChatGPT come out?
+Well, ChatGPT comes out 0.002, that is, cheaper.
+This, this result that we have here, which is anything, is cheaper than this.
+It is more expensive than this, which is fine, it is well done.
+Let's see how much...
+How much money does Cohere have?
+Well, they raised 165 million dollars to make that model that we just saw there.
+So, why do I say this? Because we always think of these big Silicon Valley companies
+as if they were generating incredible products and here you can see how with a product
+I don't say mediocre, but it is not of the same quality as the market leader, it can also be in the game, it can have a giant financing and stay there.
+We hope that GoGear can improve the quality of their models and also the same with
+Anthropic, Meta, Google, etc. and that this makes science advance a lot more.
+So what I want to do here is to compare the last thing, the video and the text and all the description, I am doing this with GPT-4, I have the model available here.
+And what I'm saying here is the system, this is the context.
+I'm saying, you are YouTube GPT, a language model trained by OpenAI, you are a YouTuber expert and you are concise, you do not skip any detail and you write scientifically when possible.
+Create. Share. Learn.
+And now I tell it the input, I want you to read this website, which is the page we just saw.
+Oh, that's why I was taking it, because I had put this, the chain of thought.
+I want you to read this other website, which is the repo of OpenPlayground.
+And now I tell it, now I want you to give me three examples of a title and a description
+for a new YouTube video that I'm wanting to record
+about this new tool called Open Playground.
+where you can compare blah blah blah blah blah no, do not give me a title that is clickbait and try to
+write a description that is a little longer, do not invent things, use the information
+of the links that I gave you, I do not want you to talk about chain of thought and I want you to take into account the
+fact that gpt4 can be used for free with this tool and then to forget again
+I tell you to write with a strong Argento accent and you can see the things that it generates for me, not here
+And well, this is what I ended up using in the description.
+Now, what I do want to do is to copy this and paste it here, let's see the last example.
+Let's see what it does to us, right?
+Well, let's see.
+Hi, I'm U2GPT.
+Well, Antropic, we can see that it didn't do anything to us.
+Testing the large language modules with, I don't know, Antropic Cloud.
+Cloud is generating something for us, at least.
+that is, by testing the language models.
+Good, good.
+Lama is not doing anything to us.
+Go here.
+If you can, if you can, don't worry.
+I will provide a text to a voice.
+Impressive. Anything.
+Let's see.
+Well...
+GPT-4, we have this, and, well, GPT-Chat too, right?
+I mean, they also make us things that are good.
+Maybe this one is even better.
+It compares the best of the free market.
+And it sounds good, this one, eh?
+Maybe we'll use this one.
+Look, what's the best language mode? Blah, blah, blah.
+go out...
+both are good, interesting, I wanted to leave you this page for now it is free so I would say
+use it, try it, you can use GPT-4 3.5 here, you can see how it works, you can see a little in what
+state we are, because it is said that machines are going to dominate the world and in general this is
+That is the current state of things. It is neither more nor less than this.
+So I would say that you can practice, have this page, you can practice a little bit with the things that are written here,
+talk to the model and see what works better, what works worse, right?
+but I don't know if it's the same exact model as the one we have here or the one we have here
+so with that I want to thank you for being there until the end
+I hope this tool will be useful to you, I really thought it was very good
+and since we don't know how long it will last, I really wanted to share it now
+so you can take a look and try GPT-4 for free
+So I send you a big hug. Bye Bye!
