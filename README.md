@@ -17,7 +17,7 @@ El proyecto incluye los siguientes archivos y directorios:
 
 Para usar este pipeline, necesitas tener lo siguiente instalado:
 
-- Python 3.7 o superior
+- `Python >3.7`
 - `WhisperX`
 - `ffmpeg`
 - `yt-dlp`
@@ -31,11 +31,38 @@ $ pip install -r requirements.txt
 
 ## Ejecutar el pipeline de transcripción
 
-Para ejecutar el pipeline, tenés que ejecutar `scripts/transcribe.py`. Este script tiene una CLI que te permite especificar la ubicación del archivo del podcast y otros parámetros. Acá te muestro un ejemplo de comando:
+You can create a shell script (e.g., `run_all.sh`) that calls your Python script for each URL in the list. Here's an example of how to create a shell script for your list of URLs:
 
-`$ python transcribe_youtube_video.py --hf_token <HF_token> --url <YouTube_URL> --num_speakers <num_speakers>`
+```bash
+#!/bin/bash
 
-Este comando transcribe el podcast que se encuentra en `ruta/al/podcast.mp3`, identifica los hablantes y guarda el resultado en `salida.txt`. También podés especificar otros parámetros, como la API key y el idioma del podcast.
+urls=(
+  'https://www.youtube.com/watch?v=AUU9RlDrSo0&t=12s&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=KKH08BnAUBY&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=Wevw4zbhScM&t=2s&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=FMO13F3Btd0&t=2s&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=cUxQQU45cQ4&ab_channel=ElM%C3%A9todoRebord'
+)
+
+hf_token="YOUR_HF_TOKEN"
+
+for url in "${urls[@]}"; do
+  python transcribe_video_and_parse_output.py "$url" --hf-token "$hf_token"
+done
+```
+
+This script creates an array of URLs, loops through them, and calls your Python script (run_pipeline.py) for each URL.
+
+Make sure to replace `YOUR_HF_TOKEN` with your actual Hugging Face token.
+
+To run the shell script, follow these steps:
+
+- Save the script in a file called `run_all.sh` in the same directory as your Python script (`run_pipeline.py`).
+- Open a terminal and navigate to the directory containing the shell script.
+- Make the script executable by running `chmod +x run_all.sh`.
+- Run the script by executing `./run_all.sh`.
+
+This will process each URL one by one using your Python script.
 
 ## Referencias
 
