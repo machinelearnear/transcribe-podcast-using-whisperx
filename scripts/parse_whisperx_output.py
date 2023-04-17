@@ -4,6 +4,20 @@ import os
 import argparse
 
 def parse_transcript(file_path, guest_name, host_name="Tomas Rebord", save_to_disk=True):
+    """
+    Parses an SRT transcript file and converts it into a JSON format.
+    
+    This function takes an SRT file, reads its content, and converts it into
+    a JSON format where each entry has the speaker's name, start time, and text.
+    Optionally, the JSON output can be saved to disk.
+    
+    :param file_path: str, path to the input SRT file.
+    :param guest_name: str, name of the guest speaker.
+    :param host_name: str, optional, name of the host speaker (default: "Tomas Rebord").
+    :param save_to_disk: bool, optional, whether to save the JSON output to disk (default: True).
+    
+    :return: str, JSON-formatted transcript.
+    """
     def read_srt_file(file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             srt_content = file.read()

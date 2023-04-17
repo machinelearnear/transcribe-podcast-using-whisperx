@@ -1,15 +1,15 @@
 #!/bin/bash
 
 urls=(
-  'https://www.youtube.com/watch?v=AUU9RlDrSo0&t=12s&ab_channel=ElM%C3%A9todoRebord'
-  'https://www.youtube.com/watch?v=KKH08BnAUBY&ab_channel=ElM%C3%A9todoRebord'
-  'https://www.youtube.com/watch?v=Wevw4zbhScM&t=2s&ab_channel=ElM%C3%A9todoRebord'
-  'https://www.youtube.com/watch?v=FMO13F3Btd0&t=2s&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=AUU9RlDrSo0&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=AxUDKVxNOHs&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=Wevw4zbhScM&ab_channel=ElM%C3%A9todoRebord'
+  'https://www.youtube.com/watch?v=FMO13F3Btd0&ab_channel=ElM%C3%A9todoRebord'
   'https://www.youtube.com/watch?v=cUxQQU45cQ4&ab_channel=ElM%C3%A9todoRebord'
 )
 
-hf_token="hf_YORfWLQIbTbAeNXwKfAewWxieQhhFPg"
+hf_token="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"
 
 for url in "${urls[@]}"; do
-  python transcribe_video_and_parse_output.py "$url" --hf-token "$hf_token"
+  python run_pipeline.py "$url" --hf-token "$hf_token"
 done

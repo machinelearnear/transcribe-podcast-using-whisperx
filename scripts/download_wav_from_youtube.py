@@ -3,6 +3,10 @@ import yt_dlp
 import json
 import re
 import os
+import unicodedata
+
+def remove_accents(s):
+    return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 def get_youtube_title(URL):
     """
@@ -48,7 +52,9 @@ def convert_title(title):
     names = title[separator_index+1:].strip()
 
     # Combine the episode number and names into the desired format
-    return f"episode_{episode_number}_{names.replace(' ', '_')}".lower() # output: episode_048_alejandro_dolina
+    output_title = f"episode_{episode_number}_{names.replace(' ', '_')}".lower() # output: episode_048_alejandro_dolina
+    
+    return remove_accents(output_title)
 
 def download_audio(URL, output_dir, audio_filename):
     """
